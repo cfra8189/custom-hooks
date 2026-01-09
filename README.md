@@ -1,16 +1,82 @@
-# React + Vite
+# Custom Hooks Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Reusable React hooks with simple demos: client-side pagination (`usePagination`) and debounced values (`useDebounce`). Built with Vite and vanilla React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [Technologies Used](#technologiesused)
+- [Features](#features)
+- [Future Features](#nextsteps)
+- [Deployed App](#deployment)
+- [About the Authors](#author)
+- [Development Process](#process)
+- [Installation & Setup](#install)
+- [Works Cited](#sources)
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## <a name="technologiesused"></a>Technologies Used
 
-## Expanding the ESLint configuration
+- **JavaScript (React)** - Hooks and component demos
+- **Vite** - Fast dev server and build
+- **CSS** - Layout and styling for demo panels
+- **ESLint** - Linting for consistency
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## <a name="features"></a> Features
+
+**usePagination hook** - Current page, bounds, and navigation helpers
+**useDebounce hook** - Debounced value with cleanup on change
+**Pagination Demo** - Renders paged items with next/prev and page buttons
+**Debounce Demo** - Input with adjustable delay and filtered results
+**Responsive Layout** - Grid that stacks on small screens
+
+**In Progress:**
+
+- [ ] Additional pagination edge-case tests
+
+## <a name="nextsteps"></a>Future Features
+
+- TypeScript typings for hooks
+- Storybook examples for both hooks
+- Keyboard focus styles and aria hints
+- Unit tests for pagination math and debounce timing
+
+## <a name="deployment"></a>Deployed Link
+
+**Live Application:**
+Not deployed yet (run locally)
+
+**Repository:**
+https://github.com/cfra8189/custom-hooks
+
+## <a name="author"></a>About The Authors
+
+- **[Clarence Franklin](https://github.com/cfra8189)**
+
+## <a name="process"></a>Development Process
+
+- Feature branches and incremental commits per lab step
+- Lightweight peer review and manual testing of demos
+
+## <a name="install"></a>Installation & Setup
+
+1. Clone the repository:
+
+	```bash
+	git clone https://github.com/cfra8189/custom-hooks.git
+	```
+
+2. Install dependencies and start dev server:
+
+	```bash
+	cd custom-hooks
+	npm install
+	npm run dev
+	```
+
+3. Open the local URL from the terminal output.
+
+## <a name="sources"></a>Works Cited
+
+- React docs on hooks
+- MDN Web Docs - JavaScript timers and array methods
